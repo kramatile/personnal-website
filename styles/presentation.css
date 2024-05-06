@@ -1,0 +1,55 @@
+/*$taupe: rgba(72, 60, 50, 1);
+$dim-gray: rgba(105, 105, 105, 1);
+$champagne: rgba(255, 228, 196, 1);
+
+SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-right: linear-gradient(90deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-bottom: linear-gradient(180deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-left: linear-gradient(270deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-top-right: linear-gradient(45deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-bottom-right: linear-gradient(135deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-top-left: linear-gradient(225deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-bottom-left: linear-gradient(315deg, #483c32ff, #696969ff, #ffe4c4ff);
+$gradient-radial: radial-gradient(#483c32ff, #696969ff, #ffe4c4ff);*/
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    background-color: rgba(105, 105, 105, 1);
+    line-height: 1.5;
+    width:100vw;
+    height:auto;
+    overflow: hidden;
+}
+.textPresentation img{
+    height: 400px;
+    float: left;
+    margin-right:50px;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+.textPresentation p{
+    text-align: justify;
+    max-width:700px;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color:azure;
+}
+
+.presentation h2{
+    font-size: 6rem;
+    color:rgb(255, 228, 196, 1);
+}
+
+.Quote{
+    font-size: 20px;
+    font-weight: 700;
+    color:rgba(255, 228, 196, 1);
+}

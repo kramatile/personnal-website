@@ -1,0 +1,15 @@
+h1{
+    font-size :4rem;
+    color:white;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(72, 60, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
