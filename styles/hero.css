@@ -47,29 +47,35 @@ nav {
     font-size: 20px;
     font-weight: 500;
     margin-top: 0;
+    height: 100%;
+
 }
 
-nav a{
-    position:relative;
+nav a {
+    position: relative;
+    height: auto;
+    overflow: hidden;
 }
 
-nav a::before{
-    content:"";
+nav a::before {
+    content: "";
     position: absolute;
     background-color: rgba(255, 228, 196, 1);
-    top:100%;
-    left:0;
+    top: 90%;
+    left: 0;
     width: 0;
-    height:2px;
+    height: 2px;
     border-radius: 20px;
-    transition: .3s ease-in;
+    transition: width 0.3s ease-in-out, /* added delay here */
+                opacity 0.3s ease-in-out; /* added opacity transition */
+    opacity: 0; /* start with opacity 0 */
 }
 
-
-nav a:hover::before{
-    width:100%;
-    height:2px;
+nav a:hover::before {
+    width: 100%;
+    opacity: 1; /* change opacity to 1 */
 }
+
 
 .logo{
     font-size: 32px;
@@ -173,20 +179,62 @@ body::-webkit-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
-/*
+
 .sidebar{
     padding: 5px;
     position: fixed;
     height: 100vh;
-    width:250px;
+    width:300px;
     top:0;
     right:0;
     z-index: 999;
-    background-color:rgba(72, 60, 50, 1) ;
-    display: flex;
+    background-color:rgba(72, 60, 50) ;
+    display: none;
     flex-direction: column;
+    justify-content:left;
+    align-items: center;
 }
 
 .sidebar > .logo{
-    top:0;
-}*/
+    margin-top: 10px;
+    height:20%;
+    width:auto;
+
+}
+
+.primary_nav_bar{
+    height: 100%;
+}
+
+.sidebar > .logo > a{
+    color: rgba(255, 228, 196, 1);
+}
+
+.sidebar > .primary_nav_bar{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+} 
+
+.sidebar > .primary_nav_bar> a{
+    text-align: left;
+}
+
+.hidebig{
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hidesmall{
+        display: none;
+    }
+    .hidebig{
+        display: flex;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}

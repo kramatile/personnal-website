@@ -15,9 +15,9 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar sidebar">
             <div class="logo">
-                <a href="">BEN FATAH YASSINE</a> 
+                <a onclick=hideSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="46" viewBox="0 -960 960 960" width="46"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/></svg></a> 
             </div>
             <nav class="primary_nav_bar">
                 <a href="#presentation">Presentation</a>
@@ -28,7 +28,21 @@
 
             </nav>
         </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">BEN FATAH YASSINE</a> 
+            </div>
+            <nav class="primary_nav_bar">
+                <a class="hidesmall" href="#presentation">Presentation</a>
+                <a class="hidesmall" href="#">Skills</a>
+                <a class="hidesmall" href="#">Projects</a>
+                <a class="hidesmall" href="#">Experiences</a>
+                <a class="hidesmall" href="#">Competitions</a>
+                <a class="hidebig" onclick=showSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="white"/></svg></a>
+            </nav>
+        </div>
     </header>
+
     <section id="hero">
         <div class="container-hero">
                 <h1>I'M A DATA SCIENCE ENGINEERING STUDENT</h1>
@@ -41,6 +55,7 @@
                 </div>
         </div>
     </section>
+    
     <section id="presentation">
         <div class="presentation">
             <div><h2>Presentation </h2></div>
@@ -160,7 +175,7 @@
             <a href="https://www.youtube.com/watch?v=S-Xm7s9eGxU&ab_channel=DistantMirrors" target=”_blank”><img class="icon"src="./assets/images/youtube.png" width="70"/></a>
             <a href="./public/phone.html" target=”_blank”><img class="icon" src="./assets/images/phone.png" width="70"/></a>
        </div>
-        <br/> 
+       <br/> 
     </div>
         
     <hr/>
@@ -168,9 +183,6 @@
         <small>
           Copyright © 2024 BenFatah Yassine. All Rights Reserved.
         </small>
-<<<<<<< HEAD
-      </footer>
-=======
     </footer>
       <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -182,9 +194,16 @@
                 });
             });
         });
+        function showSideBar(){
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+        function hideSideBar(){
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
     </script>
     <script src="app.js"></script>
->>>>>>> origin/master
 </body>
 </html>
 <!-- TODO 2: Add Your previous projects' HTML into the public folder -->

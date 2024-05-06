@@ -23,7 +23,7 @@ $gradient-radial: radial-gradient(#483c32ff, #696969ff, #ffe4c4ff);*/
     background-color: rgba(105, 105, 105, 1);
     line-height: 1.5;
     width:100vw;
-    height:auto;
+    height:100vh;
     overflow: hidden;
 }
 .textPresentation img{
@@ -52,4 +52,31 @@ $gradient-radial: radial-gradient(#483c32ff, #696969ff, #ffe4c4ff);*/
     font-size: 20px;
     font-weight: 700;
     color:rgba(255, 228, 196, 1);
+}
+
+@media(max-width: 800px) {
+    .presentation{
+        height: auto;
+    }
+
+    .textPresentation img{
+        float: none;
+        height: 300px;
+        width: 300px;
+        align-items: center;
+    }
+
+    .textPresentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    
+}
+
+@media(max-width: 400px) {
+   
 }
