@@ -69,5 +69,9 @@ footer{
         font-size: 4em;
     }
 
+    .icon {
+        width: 50px;
+    }
+
     
 }
