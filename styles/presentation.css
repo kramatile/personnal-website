@@ -44,7 +44,7 @@ $gradient-radial: radial-gradient(#483c32ff, #696969ff, #ffe4c4ff);*/
 }
 
 .presentation h2{
-    font-size: 6rem;
+    font-size: 6em;
     color:rgb(255, 228, 196, 1);
 }
 
@@ -73,7 +73,14 @@ $gradient-radial: radial-gradient(#483c32ff, #696969ff, #ffe4c4ff);*/
         align-items: center;
     }
 
+    .presentation h2{
+        font-size: 4em;
+    }
     
+    #education > h1{
+        font-size: 4em;
+    }
+
     
 }
 
